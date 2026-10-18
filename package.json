@@ -1,0 +1,11 @@
+{
+  "name": "fluentxverse-site-source",
+  "private": true,
+  "description": "Public FluentXVerse website describing the tutoring platform, ecosystem, and privacy technology.",
+  "scripts": {
+    "setup": "cd fluentxverse-site && bun install",
+    "dev": "npm --prefix fluentxverse-site run dev",
+    "build": "npm --prefix fluentxverse-site run build",
+    "preview": "npm --prefix fluentxverse-site run preview"
+  }
+}
