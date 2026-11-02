@@ -1,6 +1,7 @@
 {
   "name": "fluentxverse-site-source",
   "private": true,
+  "license": "MIT",
   "description": "Public FluentXVerse website describing the tutoring platform, ecosystem, and privacy technology.",
   "scripts": {
     "setup": "cd fluentxverse-site && bun install",
