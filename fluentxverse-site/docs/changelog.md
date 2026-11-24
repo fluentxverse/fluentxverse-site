@@ -13,7 +13,7 @@ deployments; earlier history has not been reconstructed.
 2. Append an entry with the next unused `FXV-YYYYMMDD-NNN` ID for that release
    date. The sequence is global across apps, not restarted per app. Never
    recycle or renumber an ID. Its permalink is `/changelog#<ID>`.
-3. Set `apps` to one or more of `student`, `tutor`, `backend`, `engine`. A shared fix has
+3. Set `apps` to one or more of `student`, `tutor`, `dashboard`, `site`, `backend`, `engine`. A shared fix has
    one ID with multiple apps; do not duplicate it under different IDs.
 4. Use `added`, `improved`, `fixed`, `changed`, or `removed`, followed by a
    concise title, summary, and details. Use the deployment date, not the date
@@ -30,6 +30,15 @@ a version or claim an unmerged commit was deployed.
 Only publish public-safe descriptions. Never include student or tutor records,
 private scores, payment records, wallet secrets, credentials, internal URLs,
 or unpublished vulnerability details. Entries are plain text, not HTML.
+
+Focus new entries on shipped product changes. Do not announce newly authored
+lesson materials, lesson-by-lesson content revisions, or curriculum production
+progress. A deployed application fix may still be documented without describing
+the lesson content. Preserve existing release history.
+
+Record curriculum authoring and draft status separately in
+[`docs/conversational-skills-authoring-changelog.md`](../../docs/conversational-skills-authoring-changelog.md),
+not in the public product feed.
 
 The app filter, change type and search are shareable query parameters. Entry
 permalinks intentionally omit filters so the linked update remains visible.
